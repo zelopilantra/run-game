@@ -16,18 +16,20 @@
     position: absolute;
     bottom: 0;
     width: 80px;
-    right: -80px;
-    animation: magic-animation 1500ms infinite linear;
+    animation: magic-animation 2s infinite linear;
 }
-.penguin {
-    width: 130px;
+.pen {
+    width: 100px;
     position: absolute;
-    animation: jump 800ms infinite;
+    bottom: 0;
+}
+.jump {
+    animation: jump 600ms ease-out;
 }
 
 @keyframes magic-animation {
     from {
-        right: -80px;
+        right: -77px;
     }
     to {
         right: 100%;
@@ -38,11 +40,12 @@
         bottom: 0;
     }
     40% {
-        bottom: 100px;
+        bottom: 120px;
     }
     60% {
-        bottom: 100px;
+        bottom: 120px;
     }
+
     100% {
         bottom: 0;
     }
