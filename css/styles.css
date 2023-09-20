@@ -5,12 +5,13 @@
 }
 
 .game-board {
-    width: 80%;
+    width: 100%;
     height: 500px;
-    border: 1px solid #333;
+    border-bottom: 30px solid green;
     position: relative;
     margin: 0 auto;
     overflow: hidden;
+    background: linear-gradient(#217de6, #c5d6e9);
 }
 .magic {
     position: absolute;
@@ -25,6 +26,21 @@
 }
 .jump {
     animation: jump 600ms ease-out;
+}
+.lay1 {
+    position: absolute;
+    width: 200px;
+    animation: lay1 10s infinite linear;
+}
+.lay2 {
+    position: absolute;
+    width: 120px;
+    animation: lay2 15s infinite linear;
+}
+.lay3 {
+    position: absolute;
+    width: 150px;
+    animation: lay3 5s infinite linear;
 }
 
 @keyframes magic-animation {
@@ -48,5 +64,31 @@
 
     100% {
         bottom: 0;
+    }
+}
+
+@keyframes lay1 {
+    from {
+        right: -77px;
+    }
+    to {
+        right: 100%;
+    }
+}
+@keyframes lay2 {
+    from {
+        right: -77px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes lay3 {
+    from {
+        right: -77px;
+    }
+    to {
+        right: 100%;
     }
 }

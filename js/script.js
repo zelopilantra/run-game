@@ -16,6 +16,15 @@ const loop = setInterval(() => {
     if (magicPosition <= 80 && magicPosition > 0 && penPosition < 75) {
         magic.style.animation = "none";
         magic.style.left = `${magicPosition}px`;
+
+        pen.style.animation = "none";
+        pen.style.bottom = `${penPosition}px`;
+
+        pen.src = "./imgs/die.png";
+        pen.style.width = "65px";
+        pen.style.marginleft = "-10px";
+
+        clearInterval(loop);
     }
 }, 10);
 
