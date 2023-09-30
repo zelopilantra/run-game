@@ -29,12 +29,12 @@
 }
 .lay1 {
     position: absolute;
-    width: 200px;
+    width: 150px;
     animation: lay1 10s infinite linear;
 }
 .lay2 {
     position: absolute;
-    width: 120px;
+    width: 200px;
     animation: lay2 15s infinite linear;
 }
 .lay3 {
@@ -69,7 +69,7 @@
 
 @keyframes lay1 {
     from {
-        right: -77px;
+        right: -300px;
     }
     to {
         right: 100%;
@@ -77,7 +77,7 @@
 }
 @keyframes lay2 {
     from {
-        right: -77px;
+        right: -130px;
     }
     to {
         right: 100%;
@@ -86,7 +86,7 @@
 
 @keyframes lay3 {
     from {
-        right: -77px;
+        right: -200px;
     }
     to {
         right: 100%;
